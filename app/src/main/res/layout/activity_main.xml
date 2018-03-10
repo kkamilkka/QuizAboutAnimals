@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dolphins_im"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dolphins" />
+
+            <TextView
+                android:id="@+id/dolphins_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="dolphins call each other by their name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/dolphins_txt"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:textSize="18sp">
+
+                <RadioButton
+                    android:id="@+id/dolphins_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="30dp"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/dolphins_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="False" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/koala_im"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/koala" />
+
+            <TextView
+                android:id="@+id/koala_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="koalas: select the true statements"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/koala_chb1_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/koala_chb3_true"
+                android:layout_alignBottom="@+id/koala_chb3_true"
+                android:layout_alignLeft="@+id/koala_chb4_false"
+                android:layout_alignStart="@+id/koala_chb4_false"
+                android:fontFamily="sans-serif"
+                android:text="koalas are bears"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:id="@+id/koala_chb2_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/koala_chb1_false"
+                android:fontFamily="sans-serif"
+                android:text="koalas are great swimmers"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:id="@+id/koala_chb3_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/koala_txt"
+                android:fontFamily="sans-serif"
+                android:text="baby koalas eat their mum poo"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:id="@+id/koala_chb4_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/koala_chb3_true"
+                android:fontFamily="sans-serif"
+                android:text="koalas eat bamboo"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pandas_im"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/panda" />
+
+            <TextView
+                android:id="@+id/pandas_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="what do pandas almost exclusively feed on"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/pandas_tr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pandas_txt"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:hint="your answer"
+                android:inputType="textCapWords"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/giraffe_im"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitEnd"
+                android:src="@drawable/giraffe" />
+
+            <TextView
+                android:id="@+id/giraffe_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="giraffe have more bones in their necks than humans"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/giraffe_txt"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:textSize="18sp">
+
+                <RadioButton
+                    android:id="@+id/giraffe_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="30dp"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/giraffe_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/next_q4"
+                    android:layout_toStartOf="@+id/next_q4"
+                    android:fontFamily="sans-serif"
+                    android:text="False" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="37dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="summary"
+            android:text="finish quiz" />
+    </LinearLayout>
+</ScrollView>
